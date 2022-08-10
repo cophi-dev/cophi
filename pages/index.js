@@ -18,8 +18,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbGit from '../public/images/links/github.png'
+import thumbTwitter from '../public/images/links/twitter.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -80,21 +80,14 @@ const Home = () => (
           About me
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+          I love to build minimalistic and interactive web apps. My whole life
+          I've been passionate about everything tech. After working as an
+          engineer for several years, i decided to focus on my true passion -
+          web development. Write about web3. NFT project called &quot;
+          <NextLink href="https://twobitbears.com" passHref>
+            <Link target="_blank">Two Bit Bears</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot;.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -115,16 +108,33 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          Completed the Master&apos;s Program Infrastructural Engineering at the
-          HafenCity University.
+          Master of Science in Civil Engineering at the HafenCity University.
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
           Finished CS50x at the Harvard University
         </BioSection>
         <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Working as a partner and community manager at Two Bit Bears
+          <BioYear>2021</BioYear>
+          Became Partner and Community Manager at{' '}
+          <NextLink href="https://twobitbears.com" passHref>
+            <Link target="_blank">Two Bit Bears</Link>
+          </NextLink>
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Several courses at{' '}
+          <NextLink href="https://buildspace.so/projects" passHref>
+            <Link target="_blank">Buildspace</Link>
+          </NextLink>
+          ,{' '}
+          <NextLink href="https://www.alchemy.com/" passHref>
+            <Link target="_blank">Alchemy</Link>
+          </NextLink>
+          ,{' '}
+          <NextLink href="https://scrimba.com" passHref>
+            <Link target="_blank">Scrimba</Link>
+          </NextLink>
         </BioSection>
       </Section>
 
@@ -133,15 +143,11 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
+          Nature, Music, Art{' '}
+          {/*  <Link href="https://illust.odoruinu.net/" target="_blank">
             Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          </Link> */}
+          , Summer, Electric Vehicles, Renewable Energy, web3
         </Paragraph>
       </Section>
 
@@ -151,46 +157,24 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/cophi-dev" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @cophi-dev
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://twitter.com/_cophi_" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @cophi
               </Button>
             </Link>
           </ListItem>
@@ -198,18 +182,18 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
+            href="https://twitter.com/_cophi_"
             title="Dev as Life"
-            thumbnail={thumbYouTube}
+            thumbnail={thumbTwitter}
           >
-            My YouTube channel (&gt;100k subs)
+            @Twitter
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
+            href="https://github.com/cophi-dev"
             title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            thumbnail={thumbGit}
           >
-            A Markdown note-taking app
+            @GitHub
           </GridItem>
         </SimpleGrid>
 

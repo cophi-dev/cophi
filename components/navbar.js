@@ -97,6 +97,7 @@ const Navbar = props => {
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
+                bg={useColorModeValue('#ffffff40', '#20202380')}
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
