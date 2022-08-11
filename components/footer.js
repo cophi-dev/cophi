@@ -8,9 +8,9 @@ const Footer = () => {
       <Link href="https://twitter.com/_cophi_" target="_blank">
         cophi
       </Link>
-      . All Rights Reserved. Designed by{' '}
+      . All Rights Reserved. Design by{' '}
       <Link href="https://craftz.dog" target="_blank">
-        Takuya Matsuyama
+        Takuya Matsuyama🐾
       </Link>
     </Box>
   )

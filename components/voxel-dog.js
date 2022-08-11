@@ -13,12 +13,12 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(0.4, 0.23, 0.5))
+  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      200 * Math.sin(0.2 * Math.PI),
-      100,
-      200 * Math.cos(0.2 * Math.PI)
+      20 * Math.sin(0.2 * Math.PI),
+      10,
+      20 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 2.1
+      const scale = scH * 0.005 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -66,15 +66,15 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 10)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
       scene.add(ambientLight)
 
       const controls = new OrbitControls(camera, renderer.domElement)
-      controls.autoRotate = false
+      controls.autoRotate = true
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/TBB.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
@@ -83,7 +83,7 @@ const VoxelDog = () => {
       })
 
       let req = null
-      let frame = 45
+      let frame = 0
       const animate = () => {
         req = requestAnimationFrame(animate)
 
@@ -91,9 +91,9 @@ const VoxelDog = () => {
 
         if (frame <= 100) {
           const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 100) * Math.PI * 20
+          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-          camera.position.y = 80
+          camera.position.y = 10
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =

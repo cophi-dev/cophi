@@ -46,7 +46,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             cophi
           </Heading>
-          <p>blockchain native ( React / Solidity / web3 )</p>
+          <p>web3 builder & community manager ( JS/ React / Solidity )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -108,11 +108,12 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          Master of Science in Civil Engineering at the HafenCity University.
+          Master of Science in Civil Engineering.
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Finished CS50x at the Harvard University
+          Finished CS50x - An Introduction to Computer Science at the Harvard
+          University
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
@@ -123,7 +124,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
-          Several courses at{' '}
+          completed several courses on frontend and blockchain development at{' '}
           <NextLink href="https://buildspace.so/projects" passHref>
             <Link target="_blank">Buildspace</Link>
           </NextLink>
