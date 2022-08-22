@@ -18,7 +18,7 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        web3 projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -60,7 +60,7 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          web2 portfolio
         </Heading>
       </Section>
 
@@ -91,7 +91,7 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          certificates / courses
         </Heading>
       </Section>
 
