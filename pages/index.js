@@ -211,4 +211,4 @@ const Home = () => (
 )
 
 export default Home
-export { getServerSideProps } from '../cophi/components/chakra'
+export { getServerSideProps } from '../components/chakra'
