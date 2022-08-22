@@ -3,14 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
-import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
-import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
-import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
-import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
-import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
-import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import thumbBlog from '../public/images/contents/blog_intro.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -22,11 +15,11 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="How to build a portfolio website"
-            thumbnail={thumbPortfolio}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
+            title="Introduction to my blog"
+            thumbnail={thumbBlog}
+            href="https://blog-cophi-dev.vercel.app/posts/day-1-of-100daysofcode"
           />
-          <GridItem
+          {/*           <GridItem
             title="How to take notes in Markdown efficiently with Inkdrop"
             thumbnail={thumbHowToUseInkdrop}
             href="https://www.youtube.com/watch?v=-qBavwqc_mY"
@@ -40,11 +33,11 @@ const Posts = () => (
             title="My desk setup (Late 2020)"
             thumbnail={thumbMyDeskSetup}
             href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
-          />
+          /> */}
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.3}>
+      {/*       <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
@@ -57,8 +50,8 @@ const Posts = () => (
             href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
           />
         </SimpleGrid>
-      </Section>
-
+      </Section> */}
+      {/* 
       <Section delay={0.5}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
@@ -72,7 +65,7 @@ const Posts = () => (
             href="https://www.youtube.com/watch?v=vj723NlrIQc"
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
 )
