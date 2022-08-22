@@ -3,8 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbFrontendPortfolio from '../public/images/works/frontend-portfolio_eyecatcher.png'
-import thumbColors from '../public/images/works/colors_eyecatch.png'
+import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
 import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
@@ -15,30 +15,26 @@ import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
-  <Layout title="Projects">
+  <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Projects
+        Works
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem
-            id="portfolio"
-            title="portfolio 1.0"
-            thumbnail={thumbFrontendPortfolio}
-          >
-            A website to showcase some of my web2.0 experiences.
+          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+            A Markdown note-taking app with 100+ plugins, cross-platform and
+            encrypted data sync support
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="colors"
-            title="colors. nft mint page"
-            thumbnail={thumbColors}
+            id="walknote"
+            title="walknote"
+            thumbnail={thumbWalknote}
           >
-            Mint page to claim randomly generated and 100% onchain NFTs of
-            colors. Ruuning on Rinkeby testnet.
+            Music recommendation app for iOS
           </WorkGridItem>
         </Section>
 

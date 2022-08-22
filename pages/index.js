@@ -12,11 +12,11 @@ import {
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import Paragraph from '../../cophi/components/paragraph'
+import { BioSection, BioYear } from '../../cophi/components/bio'
+import Layout from '../../cophi/components/layouts/article'
+import Section from '../../cophi/components/section'
+import { GridItem } from '../../cophi/components/grid-item'
 import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 import thumbGit from '../public/images/links/github.png'
 import thumbTwitter from '../public/images/links/twitter.png'
@@ -77,7 +77,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About me
+          Work
         </Heading>
         <Paragraph>
           I love to build minimalistic and interactive web apps. My whole life
@@ -211,4 +211,4 @@ const Home = () => (
 )
 
 export default Home
-export { getServerSideProps } from '../components/chakra'
+export { getServerSideProps } from '../../cophi/components/chakra'

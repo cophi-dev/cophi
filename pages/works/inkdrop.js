@@ -12,10 +12,10 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="portfolio">
+  <Layout title="Inkdrop">
     <Container>
       <Title>
-        Portfolio 1.0 <Badge>2022</Badge>
+        Inkdrop <Badge>2016-</Badge>
       </Title>
       <P>
         A Markdown note-taking app with 100+ plugins, cross-platform and
@@ -24,8 +24,8 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.phillipp.eu/">
-            https://www.phillipp.eu/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://www.inkdrop.app/">
+            https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
